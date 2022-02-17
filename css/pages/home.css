@@ -1,0 +1,66 @@
+@import "../base/base.css";
+@import "../base/base.css";
+
+.container {
+  width: 1000px;
+  display: grid;
+  background-color: var(--primary-color);
+  margin: 0 calc(50% - 500px);
+  padding-top: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "kaire desine";
+}
+
+.kaire {
+  grid-area: kaire;
+  justify-self: start;
+  background-color: lightblue;
+  justify-self: end;
+}
+.desine {
+  display: grid;
+  grid-area: desine;
+  justify-self: center;
+  background-color: var(--primary-color);
+  align-self: center;
+  padding-left: 40px;
+  grid-template-columns: 1fr;
+  text-align: center;
+  grid-template-areas:
+    "title"
+    "descr"
+    "little"
+    "btn";
+}
+
+.desine .title {
+  grid-area: title;
+  font-size: 90px;
+  justify-self: center;
+  color: var(--secondary-color);
+}
+.description {
+  color: var(--secondary-color);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 23px;
+}
+.little-description {
+  color: var(--secondary-color);
+}
+.btn {
+  grid-area: btn;
+  align-self: center;
+  background-color: var(--secondary-color);
+  justify-self: center;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 2em;
+  font-size: 13px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+}
